@@ -1,0 +1,94 @@
+------------------------------------------
+VERIFY USER LOGIN FUNCTIONALITY
+------------------------------------------
+1. TEST_CASE_001: Check Valid User Login
+    - Expected Output: Successfull Login
+
+2. TEST_CASE_002: Check Invalid User Login
+    - Expected Output: Login fails
+
+
+------------------------------------------
+VERIFY VEHICLE ENTRY FUNCTIONALITY
+------------------------------------------
+1. TEST_CASE_003: Check Vehicle Entry for Car (4-Wheeler)
+    - Expected Output: Vehicle Entry Successful
+
+2. TEST_CASE_004: Check Vehicle Entry for Bike (2-Wheeler)
+    - Expected Output: Vehicle Entry Successful
+
+3. TEST_CASE_005: Check Vehicle Entry for Invalid Vehicle Number
+    - Expected Output: Vehicle Entry Fails
+
+4. TEST_CASE_006: Check Vehicle Entry for Authorized Vehicle Number
+    - Expected Output: Vehicle Entry Successful (No Parking Fee)
+
+5. TEST_CASE_007: Check Vehicle Number that is already inside the Parking Lot
+    - Expected Output: Vehicle Entry Fails
+
+6. TEST_CASE_008: Check Parking Full Scenario
+    - Expected Output: Vehicle Entry Fails
+
+
+------------------------------------------
+VERIFY VEHICLE EXIT FUNCTIONALITY
+------------------------------------------
+1. TEST_CASE_009: Check Vehicle Exit with Valid Vehicle Number
+    - Expected Output: Vehicle Exit Successful
+
+2. TEST_CASE_010: Check Vehicle Exit with Invalid Vehicle Number
+    - Expected Output: Vehicle Exit Fails
+
+
+------------------------------------------
+VERIFY ADMIN ONLY FUNCTIONALITY
+------------------------------------------
+1. TEST_CASE_011: Check Marking a Slot for Maintenance
+    - Expected Output: The status of the mentioned slot is changed to 'Maintenance'
+
+2. TEST_CASE_012: Check Marking a Invalid Slot for Maintenance
+    - Expected Output: Request Fails
+
+3. TEST_CASE_013: Check Marking a Occupied Slot for Maintenance
+    - Expected Output: Request Fails
+
+4. TEST_CASE_014: Check Reverting the Slot back from Maintenance
+    - Expected Output: The status of the mentioned slot is changed to 'Free'
+
+5. TEST_CASE_015: Check Adding New Slots with Valid Slot ID
+    - Expected Output: New Slots are Added
+
+6. TEST_CASE_016: Check Adding New Slots with Invalid Slot ID
+    - Expected Output: Request Fails
+
+7. TEST_CASE_017: Check the Admin Options are not available for Normal User
+    - Expected Output: Admin Options are not available
+
+
+------------------------------------------
+VERIFY STATS VIEW AND REPORTING 
+------------------------------------------
+1. TEST_CASE_018: Check Number of Available Slots
+    - Expected Output: Displays the number of available slots
+
+2. TEST_CASE_019: Check Number of Filled Slots
+    - Expected Output: Displays the number of filled slots
+
+3. TEST_CASE_020: Check Income Stats
+    - Expected Output: Appropriate Income Stats are displayed based on requested data from options
+
+4. TEST_CASE_021: Check Vehicle History
+    - Expected Output: Displays the history of visits of the requested vehicle number
+
+5. TEST_CASE_022: Check Lookup Options
+    - Expected Output: Displays the Slot ID given Vehicle Number or Vice Versa
+
+6. TEST_CASE_023: Check Customer Stats
+    - Expected Output: Appropriate Customer Stats are displayed based on requested data from options
+
+
+------------------------------------------
+VERIFY EXIT APPLICATION
+------------------------------------------
+1. TEST_CASE_024: Check Exit Application
+    - Expected Output: Application Exits Successfully
